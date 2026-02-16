@@ -8,13 +8,7 @@
   "UIPackage": null,
   "ID": "2618157802",
   "Flag": 824157,
-  "Tags": [
-    "Function",
-    "Usability",
-    "Integrated",
-    "ExcludeRealmsHeaven",
-    "Non-Chinese"
-  ],
+  "Tags": ["Function","Usability","Integrated","ExcludeRealmsHeaven","Non-Chinese"],
   "IncreasedDesc": "v1.1 - แก้ไขจุดสร้างหายและอัปเดตรายการไอเทมใหม่",
   "IsInsideCreat": false,
   "Previews": [],
