@@ -1,0 +1,1352 @@
+<ThingDefs><List>
+		
+	<ThingDef Type="Building" Name="ExchangePlace"  Parent="ProductionBase">	
+	<ThingName>ตลาดมืด</ThingName>
+	<Desc>ตลาดที่หาไรก็มีทุกอย่าง</Desc>
+	<TileID>271</TileID>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>2</Beauty>
+	<BlockLight>0</BlockLight>
+	<MaxHitPoints>1</MaxHitPoints>
+	<ColliderKind>None</ColliderKind>
+	<VisionRadius>0</VisionRadius>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[6],
+		</Data>
+		<WorkOffset>
+			<li Index="0"  X="0" Y="0" Ang="1"/>
+		</WorkOffset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>400</BurningPoint>
+	</Flammability>
+	<Building>
+		<ShowFree>0</ShowFree>
+		<NoFengshui>1</NoFengshui>
+		<NoFight>1</NoFight>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<WorkToMake>0</WorkToMake>
+			<Quality>0</Quality>
+		</BeMade>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_LingStone</ThingDef>
+				<Display>灵石</Display>
+				<Count>10000</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_LingCrystal</ThingDef>
+				<Display>ผลึกวิญญาณ</Display>
+				<Count>1000</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Display>ผลอำพัน</Display>
+				<Count>1000</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_Lotusroot</ThingDef>
+				<Display>รากบัว</Display>
+				<Count>1000</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_Pear</ThingDef>
+				<Display>ลูกแพร์</Display>
+				<Count>1000</Count>
+			</Produce>
+			<!-- <Produce>
+				<ThingDef>Item_Flour</ThingDef>
+				<Display>面粉</Display>
+				<Count>100</Count>
+			</Produce> -->
+			 <Produce>
+				<ThingDef>Item_Wheat</ThingDef>
+				<Display>小麦</Display>
+				<Count>100</Count>
+			</Produce>
+			 <Produce>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Display>ฝ้าย</Display>
+				<Count>100</Count>
+			</Produce>
+			
+			 <Produce>
+				<ThingDef>Item_WuHuangDan</ThingDef>
+				<Display>ไข่แดง</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+    <ThingDef>Item_BoarMeat</ThingDef>
+    <Display>เนื้อหมูป่า</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_FrogMeat</ThingDef>
+    <Display>เนื้อกบ</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_TurtleMeat</ThingDef>
+    <Display>เนื้อเต่า</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BearMeat</ThingDef>
+    <Display>เนื้อหมี</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Beef</ThingDef>
+    <Display>เนื้อกระทิง</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_RabbitMeat</ThingDef>
+    <Display>เนื้อกระต่าย</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_ChickenMeat</ThingDef>
+    <Display>เนื้อไก่</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_WolfMeat</ThingDef>
+    <Display>เนื้อหมาป่า</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_FishMeat</ThingDef>
+    <Display>เนื้อปลา</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_SnakeMeat</ThingDef>
+    <Display>เนื้องู</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_CatMeat</ThingDef>
+    <Display>เนื้อแมว</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_TigerMeat</ThingDef>
+    <Display>เนื้อเสือ</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_ChickenEgg</ThingDef>
+    <Display>ไข่ไก่</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_SnakeEgg</ThingDef>
+    <Display>ไข่งู</Display>
+    <Count>1000</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_TurtleEgg</ThingDef>
+    <Display>ไข่เต่า</Display>
+    <Count>1000</Count>
+</Produce>
+			<!--<Produce>
+				<ThingDef>Item_Healroot</ThingDef>
+				<Display>药草</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cotton</ThingDef>
+				<Display>棉花</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Mushroom</ThingDef>
+				<Display>蘑菇</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Display>龙涎果</Display>
+				<Count>50</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_MagicHerb</ThingDef>
+				<Display>灵仙草</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Mint</ThingDef>
+				<Display>清心草</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Ginseng</ThingDef>
+				<Display>人参</Display>
+				<Count>80</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_RedGinseng</ThingDef>
+				<Display>赤参</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GanodermaLucidum</ThingDef>
+				<Display>芝草</Display>
+				<Count>80</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PurpleGanodermaLucidum</ThingDef>
+				<Display>紫芝</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWater</ThingDef>
+				<Display>灵初露</Display>
+				<Count>500</Count>
+			</Produce> -->
+			<Produce>
+				<ThingDef>Item_HardWood</ThingDef>
+				<Display>金丝木</Display>
+				<Count>1000</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_GrayRock</ThingDef>
+				<Display>金丝木</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWood</ThingDef>
+				<Display>灵木</Display>
+				<Count>1000</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_ParasolWood</ThingDef>
+				<Display>梧桐木</Display>
+				<Count>1000</Count>
+			</Produce>			
+			
+			<Produce>
+				<ThingDef>Item_IronRock</ThingDef>
+				<Display>铁矿</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperRock</ThingDef>
+				<Display>火铜</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverRock</ThingDef>
+				<Display>寒晶</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Display>玄铁</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StarEssence</ThingDef>
+				<Display>星髓</Display>
+				<Count>100</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_BrownRock</ThingDef>
+				<Display>棕石</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Marble</ThingDef>
+				<Display>大理石</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Jade</ThingDef>
+				<Display>玉石</Display>
+				<Count>1000</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StoneEssence</ThingDef>
+				<Display>石髓</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JadeEssence</ThingDef>
+				<Display>玉髓</Display>
+				<Count>1000</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_SkyStone</ThingDef>
+				<Display>天柱石</Display>
+				<Count>1000</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_SoulCrystalYou</ThingDef>
+				<Display>幽珀</Display>
+				<Count>30</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SoulCrystalLing</ThingDef>
+				<Display>灵珀</Display>
+				<Count>30</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SoulCrystalNing</ThingDef>
+				<Display>宁珀</Display>
+				<Count>30</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_StoneBox2</ThingDef>
+				<Display>古旧石匣</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ZaoHuaYuLu</ThingDef>
+				<Display>造化玉露</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Display>朱果</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ShuiEssence</ThingDef>
+				<Display>五色金莲</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MuEssence</ThingDef>
+				<Display>木枯藤</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JinEssence</ThingDef>
+				<Display>琅琊果</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_TuEssence</ThingDef>
+				<Display>赭黄精</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_EarthEssence</ThingDef>
+				<Display>地母灵液</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LifeStream</ThingDef>
+				<Display>长生泉</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SoulPearl</ThingDef>
+				<Display>玄牝珠</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MonsterBlood</ThingDef>
+				<Display>妖灵血</Display>
+				<Count>25</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Cinnabar</ThingDef>
+				<Display>朱砂</Display>
+				<Count>50</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_RabbitLuck</ThingDef>
+				<Display>兔妖的脚</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_WolfAtk</ThingDef>
+				<Display>妖狼的尖牙</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_SnakeHanLin</ThingDef>
+				<Display>妖蛇的寒鳞</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_BearPiMao</ThingDef>
+				<Display>熊妖的脖颈毛</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_TurtleKe</ThingDef>
+				<Display>巨龟的坚甲</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingMuXueJie</ThingDef>
+				<Display>灵木血竭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_EarthEssence_1</ThingDef>
+				<Display>灵髓脂</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_YuanHunLu</ThingDef>
+				<Display>元魂露</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_YanDaoGuo</ThingDef>
+				<Display>演道果</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_EarthEssence1</ThingDef>
+				<Display>邪脉血泉</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_EarthEssence1_1</ThingDef>
+				<Display>血髓脂</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XieHunLu</ThingDef>
+				<Display>邪魂露</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_QieDaoGuo</ThingDef>
+				<Display>窃道果</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BossLong_Meat</ThingDef>
+				<Display>蛟龙的血肉</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BossZhuLong_Meat</ThingDef>
+				<Display>原初血肉</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BossFeng_Meat</ThingDef>
+				<Display>凶凤的血肉</Display>
+				<Count>1</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_BenYuan_Jin</ThingDef>
+				<Display>天道本源-金</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BenYuan_Shui</ThingDef>
+				<Display>天道本源-水</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BenYuan_Huo</ThingDef>
+				<Display>天道本源-火</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BenYuan_Tu</ThingDef>
+				<Display>天道本源-土</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BenYuan_Mu</ThingDef>
+				<Display>天道本源-木</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BenYuan_None</ThingDef>
+				<Display>天道本源-无</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SoulCrystalYuanLing</ThingDef>
+				<Display>元灵之珀</Display>
+				<Count>25</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Yao_CatSoul</ThingDef>
+				<Display>猫妖之珀</Display>
+				<Count>25</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DragonShit</ThingDef>
+				<Display>天龙砂</Display>
+				<Count>20</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ThunderAir</ThingDef>
+				<Display>天劫之息</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DragonScale</ThingDef>
+				<Display>龙鳞</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XianBone</ThingDef>
+				<Display>仙人遗骨</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XianDaoShenNian</ThingDef>
+				<Display>仙识神念</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ZaoHuaYuZi</ThingDef>
+				<Display>造化玉籽</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ExtremeJade</ThingDef>
+				<Display>千棱神玉</Display>
+				<Count>1</Count>
+			</Produce>
+				<Produce>
+				<ThingDef>Item_BossFeng_HongYu</ThingDef>
+				<Display>หยกหงส์เพลิงสวรรค์</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+    <ThingDef>Item_Boss_Jiaowangci</ThingDef>
+    <Display>เขาราชามังกร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Boss_Fenghuangneidan</ThingDef>
+    <Display>แก่นหงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_HuoYu</ThingDef>
+    <Display>ขนเพลิงกัลป์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_GangYu</ThingDef>
+    <Display>ขนเกราะเหล็กหงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_TouYu</ThingDef>
+    <Display>ขนหงส์เพลิงนิรันดร์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_WeiYu</ThingDef>
+    <Display>ขนหางหงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_Gu</ThingDef>
+    <Display>กระดูกหงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossLong_Jiao</ThingDef>
+    <Display>เขามังกรวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossLong_Zhua</ThingDef>
+    <Display>กรงเล็บมังกรวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossLong_Lin</ThingDef>
+    <Display>เกล็ดมังกรวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossLong_NiLin</ThingDef>
+    <Display>เกล็ดย้อนมังกรวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossLong_Jing</ThingDef>
+    <Display>ชีพจรมังกรวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_BaiLin</ThingDef>
+    <Display>เกล็ดขาว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_HeiLin</ThingDef>
+    <Display>เกล็ดดำ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_Eye</ThingDef>
+    <Display>ผลึกหยินหยาง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_TianLin</ThingDef>
+    <Display>เกล็ดมังกรเทียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_LongYu</ThingDef>
+    <Display>หยกโกลาหล</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossFeng_FengYin</ThingDef>
+    <Display>หยกหงส์เพลิงโบราณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BossZhuLong_FengYin</ThingDef>
+    <Display>หยกโบราณ</Display>
+    <Count>1</Count>
+</Produce>
+				<Produce>
+				<ThingDef>Item_HorseFromFei</ThingDef>
+				<Display>สัญญาวิญญาณเฟย</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+    <ThingDef>Item_HorseFromJY_Rabbit</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรกระต่าย</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Chicken</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรไก่</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Wolf</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรหมาป่า</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Snake</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรงู</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Boar</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรหมูป่า</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Bear</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรหมี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Frog</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรกบ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Turtle</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรเต่า</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Cat</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรแมว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Cattle</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรกระทิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromJY_Tiger</ThingDef>
+    <Display>สัญญาวิญญาณ: อสูรพยัคฆ์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_HorseFromLuShu</ThingDef>
+    <Display>สัญญาวิญญาณ: ลู่ซู</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_BasePracticeDrug</ThingDef>
+    <Display>โอสถบ่มปราณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_JingYuan</ThingDef>
+    <Display>โอสถพลังกาย</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_JingYuan2</ThingDef>
+    <Display>โอสถโสม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_JingYuan3</ThingDef>
+    <Display>ผงแกนพฤกษา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Ling2</ThingDef>
+    <Display>โอสถตะวัน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_PracticeRate</ThingDef>
+    <Display>โอสถจิตนึกคิด</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CalmDown</ThingDef>
+    <Display>โอสถใจพิสุทธิ์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Happiness</ThingDef>
+    <Display>โอสถเริงใจ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_NoHunger</ThingDef>
+    <Display>โอสถดูดซับปราณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_NoHunger2</ThingDef>
+    <Display>โอสถอิ่มทิพย์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_LostSoul</ThingDef>
+    <Display>โอสถนิทรา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_DredgeQi1</ThingDef>
+    <Display>ผงวิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_DredgeQi</ThingDef>
+    <Display>โอสถปราณไหลเวียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_WuLingSan</ThingDef>
+    <Display>ผงรักษา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureJinDamage</ThingDef>
+    <Display>โอสถพฤกษา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureMuDamage</ThingDef>
+    <Display>โอสถพสุธา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureShuiDamage</ThingDef>
+    <Display>ผงอัคคี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureHuoDamage</ThingDef>
+    <Display>โอสถทองคำ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureTuDamage</ThingDef>
+    <Display>โอสถวารี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_CureFiveElementDamage</ThingDef>
+    <Display>โอสถเยียวยาธาตุ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_ExtremeLofty</ThingDef>
+    <Display>โอสถเทวะขจัดโรคา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_HundredRefine</ThingDef>
+    <Display>โอสถวัฏเกิดตาย</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseLife1</ThingDef>
+    <Display>โอสถชีวิต</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseLife2</ThingDef>
+    <Display>โอสถพลังชีพ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseLife3</ThingDef>
+    <Display>โอสถชีพนิรันดร์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseLife4</ThingDef>
+    <Display>โอสถฟื้นฟูชีพ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseLife5</ThingDef>
+    <Display>โอสถอนาคตกาล</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseNeckCountdown1</ThingDef>
+    <Display>โอสถผสานชีพ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_IncreaseNeckCountdown2</ThingDef>
+    <Display>ผงลวงสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_SwordBall</ThingDef>
+    <Display>โอสถจิตกระบี่</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Defense</ThingDef>
+    <Display>โอสถโล่ปราณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Ling3</ThingDef>
+    <Display>ผงศักดิ์สิทธิ์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FiveBase1</ThingDef>
+    <Display>โอสถรับรู้</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FiveBase2</ThingDef>
+    <Display>โอสถกายา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FiveBase4</ThingDef>
+    <Display>โอสถปัญญา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FiveBase5</ThingDef>
+    <Display>โอสถฟ้าอวยพร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FiveBaseFromLife</ThingDef>
+    <Display>โอสถห้าเทวะ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_TreeEXP</ThingDef>
+    <Display>โอสถเทพวิถีฟ้า</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FaceLock</ThingDef>
+    <Display>โอสถคงโฉม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Fat</ThingDef>
+    <Display>โอสถเพิ่มกล้าม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Soul3</ThingDef>
+    <Display>โอสถใจสงบ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_Soul4</ThingDef>
+    <Display>โอสถแผดเผา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_LunHui1</ThingDef>
+    <Display>ผนึกความทรงจำ: โลกดารา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_ReBorn</ThingDef>
+    <Display>โอสถเกิดใหม่</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_ReBorn_4</ThingDef>
+    <Display>โอสถนิพพาน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_LingYuanZhong</ThingDef>
+    <Display>เมล็ดพันธ์วิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_LingYuanSha</ThingDef>
+    <Display>ละอองแห่งโชค</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_LongDan1</ThingDef>
+    <Display>โอสถมังกร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FengDan1</ThingDef>
+    <Display>โอสถหงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_ZhuLongDan1</ThingDef>
+    <Display>โอสถแสงประทีป</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FenShen1</ThingDef>
+    <Display>โอสถปฐมกาล</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FenShen2</ThingDef>
+    <Display>โอสถรวมหนึ่ง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_FenShen3</ThingDef>
+    <Display>โอสถเขตแดน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_Dan_TiShen</ThingDef>
+    <Display>โอสถร่างแยก</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_WuYueZhenTu</ThingDef>
+    <Display>ค่ายกลแห่งการบรรจบ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ZhuXianZhenTu</ThingDef>
+    <Display>ค่ายกลสังหารเซียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_QiXingZhenTu</ThingDef>
+    <Display>ค่ายกลผู้พิชิต</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianDiWuFangZhenTu</ThingDef>
+    <Display>ค่ายกลสวรรค์และโลก</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_LiuYuZhenTu</ThingDef>
+    <Display>ค่ายกลจักรพรรดิ์เทวะ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_LongXingZhenTu</ThingDef>
+    <Display>ค่ายกลบงการมังกร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_FengHunZhenTu</ThingDef>
+    <Display>ค่ายกลกระบี่หงส์เพลิง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_YinYangZhenTu</ThingDef>
+    <Display>ค่ายกลหยินหยาง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_SanYinZhenTu</ThingDef>
+    <Display>ค่ายกลปราณทมิฬ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_BaMenZhenTu</ThingDef>
+    <Display>ค่ายกลกระบี่อเวจี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ShenMuZhenTu</ThingDef>
+    <Display>ค่ายกลพฤกษาวิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_YinZhang1</ThingDef>
+    <Display>ประทับคุณธรรม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_YinZhang2</ThingDef>
+    <Display>ประทับปฐมกาล</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_YinZhang3</ThingDef>
+    <Display>ประทับเร้นลับ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Ta1</ThingDef>
+    <Display>เจดีย์สวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Ta2</ThingDef>
+    <Display>เจดีย์วิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Ping1</ThingDef>
+    <Display>แจกันหยิน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Ding1</ThingDef>
+    <Display>หม้อพิธีกรรม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Bei1</ThingDef>
+    <Display>จารึกไร้อักษร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_ShiZi1</ThingDef>
+    <Display>สิงโตหยก</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_ShiTou1</ThingDef>
+    <Display>หินภูเขาปู้โจว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_TuHua1</ThingDef>
+    <Display>ม้วนตำราหยินหยาง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_ShuJi1</ThingDef>
+    <Display>บันทึกอาหารเซียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_QiJu1</ThingDef>
+    <Display>ผังกลเทพ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_FuZhou1</ThingDef>
+    <Display>เครื่องรางยันต์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_Jian1</ThingDef>
+    <Display>กระบี่เร้นลับ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_HuLu1</ThingDef>
+    <Display>น้ำเต้าทองคำ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_BaoBei1</ThingDef>
+    <Display>ของลับมังกรแดง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>FengShuiItem_SheLi1</ThingDef>
+    <Display>มุกศักดิ์สิทธิ์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan</ThingDef>
+    <Display>ม้วนคัมภีร์โบราณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan_1</ThingDef>
+    <Display>ม้วนคัมภีร์เทวะ: พระราชวังสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan_2</ThingDef>
+    <Display>ม้วนคัมภีร์เทวะ: แท่นบูชาผู้พิทักษ์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan_3</ThingDef>
+    <Display>ม้วนคัมภีร์เทวะ: มหาสมุทรแห่งทุกข์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan_4</ThingDef>
+    <Display>ม้วนคัมภีร์เทวะ: ตำหนักเทพ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_GodPractice_MiJuan_6</ThingDef>
+    <Display>ม้วนคัมภีร์เทวะ: ศาลาสมบัติศักดิ์สิทธิ์</Display>
+    <Count>1</Count>
+</Produce>
+
+<Produce>
+    <ThingDef>Item_MiBao_WuDuZhuXianSword</ThingDef>
+    <Display>กระบี่ห้าพิษจบเซียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_BaiLingZhanXianSword</ThingDef>
+    <Display>กระบี่ตัดวิญญาณเซียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ShiErShaShenMoLingSha</ThingDef>
+    <Display>ทรายทำลายล้าง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianMoHuaXueShenDao</ThingDef>
+    <Display>ดาบโลหิตปีศาจสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_YinHunZhu</ThingDef>
+    <Display>ไข่มุกสยบวิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_JiuTianYuanYangChi</ThingDef>
+    <Display>พลองเก้าสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_LongXinYinYangGui</ThingDef>
+    <Display>ศิลาเทพมังกร</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_DaiShenZhu</ThingDef>
+    <Display>โลกลวงตา</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_QiJueShenZhen</ThingDef>
+    <Display>เข็มทะลวงสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_XiXingShenSuo</ThingDef>
+    <Display>กระสวยละอองดาว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TaiYiFenGuangJian</ThingDef>
+    <Display>กระบี่แสงเหนือ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_WuqiLeiFu</ThingDef>
+    <Display>ยันต์อัสนีเบญจอเวจี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_JinFabao</ThingDef>
+    <Display>ธงเมฆาขาว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_MuFabao</ThingDef>
+    <Display>ธงบัวเขียว</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ShuiFabao</ThingDef>
+    <Display>ธงอีกาดำ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_HuoFabao</ThingDef>
+    <Display>ธงเพลิงกัลป์ผลาญปฐพี</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TuFabao</ThingDef>
+    <Display>ธงผลท้อเหลือง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_JinLianShenZuo</ThingDef>
+    <Display>ดอกบัวทองคำ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TunLingShenJian</ThingDef>
+    <Display>กรรไกรกลืนวิญญาณ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ShenNongDing</ThingDef>
+    <Display>เตาพฤกษาสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_QingNingFeiYu</ThingDef>
+    <Display>ขนวิหคฟ้ากระจ่าง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_YuanShenXinJian</ThingDef>
+    <Display>กระบี่ใจเที่ยงธรรม</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_ZhuXianJian</ThingDef>
+    <Display>กระบี่สังหารเซียน</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_LuXianJian</ThingDef>
+    <Display>กระบี่มรณะ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_XianXianJian</ThingDef>
+    <Display>กระบี่ไร้จุดจบ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_JueXianJian</ThingDef>
+    <Display>กระบี่อมตะ</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianLangDing</ThingDef>
+    <Display>เขี้ยวหมาป่าสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianShu</ThingDef>
+    <Display>กระบี่แกนสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianQuan</ThingDef>
+    <Display>กระบี่รัศมีสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianJi</ThingDef>
+    <Display>กระบี่ไข่มุกสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_TianXuan</ThingDef>
+    <Display>กระบี่หยกสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_YuHeng</ThingDef>
+    <Display>กระบี่ตาชั่งสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_KaiYang</ThingDef>
+    <Display>กระบี่กระจ่างสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_YaoGuang</ThingDef>
+    <Display>กระบี่แสงสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_MiBao_KuiHuaShenJian</ThingDef>
+    <Display>กระบี่ทานตะวัน</Display>
+    <Count>1</Count>
+</Produce>
+
+<Produce>
+    <ThingDef>Item_God_Guard2</ThingDef>
+    <Display>แร่แสงดาราแสงสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_God_Guard3</ThingDef>
+    <Display>แร่แสงดาราแกนสวรรค์</Display>
+    <Count>1</Count>
+</Produce>
+
+<Produce>
+    <ThingDef>Item_SuoYingZhiJuan</ThingDef>
+    <Display>ม้วนภาพหมื่นสรรพสิ่ง</Display>
+    <Count>1</Count>
+</Produce>
+<Produce>
+    <ThingDef>Item_OldSchool_Letter</ThingDef>
+    <Display>จดหมายปริศนา</Display>
+    <Count>1</Count>
+</Produce>
+
+  
+		</Produces>
+	</Building>
+	</ThingDef>		
+</List></ThingDefs>

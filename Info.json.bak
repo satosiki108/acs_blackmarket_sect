@@ -1,0 +1,21 @@
+{
+  "Name": "BlackMarket Sect",
+  "DisplayName": "BlackMarket Sect",
+  "GameVersion": 1.21,
+  "Version": 1.1,
+  "Desc": "ตลาดมืดแยกส่วน รวมไอเทม",
+  "Author": "ShoutingMonk735",
+  "UIPackage": null,
+  "ID": "2618157802",
+  "Flag": 824157,
+  "Tags": [
+    "Function",
+    "Usability",
+    "Integrated",
+    "ExcludeRealmsHeaven",
+    "Non-Chinese"
+  ],
+  "IncreasedDesc": "v1.1 - แก้ไขจุดสร้างหายและอัปเดตรายการไอเทมใหม่",
+  "IsInsideCreat": false,
+  "Previews": [],
+  "ParentModInfo": null}
